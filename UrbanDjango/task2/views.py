@@ -2,11 +2,12 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def class_(request):
-    return render(request, 'class_template.html')
+class shab_class(TemplateView):
+    template_name = 'class_template.html'
 
 
-def func(request):
+def shab_func(request):
     return render(request, 'func_template.html')
+
 
 
